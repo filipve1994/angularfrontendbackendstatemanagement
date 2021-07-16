@@ -1,0 +1,4 @@
+{
+  "hello": "transloco nl",
+  "dynamic": "transloco {{value}}"
+}

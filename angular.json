@@ -31,7 +31,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "src/scss/styles.scss",
+              "./node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
+              "./node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -99,13 +104,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "sampleakitaproject"
+  "defaultProject": "sampleakitaproject",
+  "cli": {
+    "defaultCollection": "@datorama/akita"
+  }
 }
