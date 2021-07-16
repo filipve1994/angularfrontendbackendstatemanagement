@@ -1,0 +1,12 @@
+## help
+
+- https://www.pullrequest.com/blog/intro-to-using-typescript-in-a-nodejs-express-project/
+- https://www.split.io/blog/node-js-typescript-express-tutorial/
+- https://dev.to/roycechua/setup-a-node-express-api-with-typescript-2021-11o1
+- https://blog.logrocket.com/typescript-with-node-js-and-express/
+- https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-1
+- https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-2
+- https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-3
+- 
+- 
+- 
