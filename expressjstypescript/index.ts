@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+// initialize configuration
 const dotenvResult = dotenv.config();
 if (dotenvResult.error) {
   throw dotenvResult.error;
@@ -15,15 +16,18 @@ import * as expressWinston from 'express-winston';
 import cors from 'cors';
 import debug from 'debug';
 import helmet from 'helmet';
+import swaggerUi from "swagger-ui-express";
 
-import {CommonRoutesConfig} from './common/common.routes.config';
-import {UsersRoutes} from './users/users.routes.config';
-import { AuthRoutes } from './auth/auth.routes.config';
-import { TimezonesRoutes } from './timezones/timezones.routes.config';
+import {CommonRoutesConfig} from './src/common/common.routes.config';
+import {UsersRoutes} from './src/users/users.routes.config';
+import { AuthRoutes } from './src/auth/auth.routes.config';
+import { TimezonesRoutes } from './src/timezones/timezones.routes.config';
 
 const app: express.Application = express();
 const server: http.Server = http.createServer(app);
-const port = 3000;
+// port is now available to the Node.js runtime
+// as if it were an environment variable
+const port = process.env.PORT || 3000;
 const routes: Array<CommonRoutesConfig> = [];
 const debugLog: debug.IDebugger = debug('app');
 
@@ -76,8 +80,10 @@ app.get('/', (req: express.Request, res: express.Response) => {
 });
 
 
+// start the express server
 // export default server.listen(port, () => {
 server.listen(port, () => {
+  // tslint:disable-next-line:no-console
   console.log(`Connected successfully on port ${port}`);
 
   routes.forEach((route: CommonRoutesConfig) => {
@@ -85,11 +91,9 @@ server.listen(port, () => {
   });
   // our only exception to avoiding console.log(), because we
   // always want to know when the server is done starting up
+  // tslint:disable-next-line:no-console
   console.log(runningMessage);
 });
-
-
-
 
 
 

@@ -7,6 +7,15 @@
 - https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-1
 - https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-2
 - https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-3
+- https://www.jeansnyman.com/node/express/node-express-with-typescript/
+- https://rsbh.dev/blog/rest-api-with-express-typescript
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
