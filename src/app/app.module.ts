@@ -16,13 +16,21 @@ import { HeaderNavbarComponent } from './components/layout/header-navbar/header-
 import { FooterComponent } from './components/layout/footer/footer.component';
 import {SidebarModule} from "primeng/sidebar";
 import {AccordionModule} from "primeng/accordion";
+import { TodoListComponent } from './examples/todo/todo-list/todo-list.component';
+import { ExampleTodoUiComponent } from './examples/example-todo-ui/example-todo-ui.component';
+import { TodoFooterComponent } from './examples/example-todo-ui/todo-footer/todo-footer.component';
+import { TodoHeaderComponent } from './examples/example-todo-ui/todo-header/todo-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderNavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TodoListComponent,
+    ExampleTodoUiComponent,
+    TodoFooterComponent,
+    TodoHeaderComponent
   ],
   imports: [
     //Angular modules

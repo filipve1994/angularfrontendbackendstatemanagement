@@ -1,0 +1,11 @@
+<div>
+  <section id="todoapp">
+    <app-todo-header (todo)="onAddTodo($event)"></app-todo-header>
+    <app-todo-list></app-todo-list>
+    <app-todo-footer [hidden]="(size | async) === 0" [count]="size | async"></app-todo-footer>
+  </section>
+  <footer id="info">
+    <p>{{uiStateMessage | async}}</p>
+    <p>Add, Remove and Complete TODOs</p>
+  </footer>
+</div>

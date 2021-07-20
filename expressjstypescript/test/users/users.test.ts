@@ -1,7 +1,10 @@
 import app from '../../index';
+// @ts-ignore
 import supertest from 'supertest';
 import { expect } from 'chai';
+// @ts-ignore
 import shortid from 'shortid';
+// @ts-ignore
 import mongoose from 'mongoose';
 
 let firstUserIdTest = '';
